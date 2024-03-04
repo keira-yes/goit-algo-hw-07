@@ -1,5 +1,6 @@
 from search_max import search_max
 from search_min import search_min
+from total_sum import total_sum
 
 class Node:
     def __init__(self, key):
@@ -33,3 +34,7 @@ print(f"Найбільше значення у дереві: {max_key}")
 # Пошук мінімального значення
 min_key = search_min(root)
 print(f"Найменше значення у дереві: {min_key}")
+
+# Сума всіх значень у дереві
+total = total_sum(root)
+print(f"Сума всіх значень у дереві: {total}")

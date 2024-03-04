@@ -1,4 +1,5 @@
 from search_max import search_max
+from search_min import search_min
 
 class Node:
     def __init__(self, key):
@@ -20,10 +21,15 @@ def insert(root, key):
 root = Node(5)
 root = insert(root, 21)
 root = insert(root, 7)
-root = insert(root, 4)
+root = insert(root, 3)
 root = insert(root, 34)
 root = insert(root, 6)
 root = insert(root, 8)
 
 # Пошук максимального значення
-search_max(root)
+max_key = search_max(root)
+print(f"Найбільше значення у дереві: {max_key}")
+
+# Пошук мінімального значення
+min_key = search_min(root)
+print(f"Найменше значення у дереві: {min_key}")

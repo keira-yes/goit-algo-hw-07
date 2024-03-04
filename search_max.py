@@ -6,9 +6,8 @@ def search_max(root):
     while root.right is not None:
         root = root.right
     
-    if root.val is not None:
-        print(f"Найбільше значення у дереві: {root.val}")
-    else:
+    if root.val is None:
         print("Дерево порожнє")
+        return
         
     return root.val
